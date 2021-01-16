@@ -4,7 +4,7 @@
 # 설명 좀 해봐요
 <h2>Why did you do that?</h2>
 시연회를 너무나도 하고 싶었던 네퓨즈 부우장 박인성은 자신의 주 분야인시각처리활용한 시연회 아이디어를 찾던 도중에 openCV를 활용하여 공룡게임을진행한 사람들영상을 보게 되었습니다. 
-<a href="https://www.youtubecom/watch?v=eoUOkV5vVpU">(영상 링크)</a> 이를 본 네퓨즈 부우장 박인성은손으로 하는 게임이 아닌 입으로 하는게 좀 재미있지 않을까 라는 생각을 하게됩니다. 이를 계기로 2주간 제작에 몰두하게 됩니다.
+<a href="https://www.youtube.com/watch?v=eoUOkV5vVpU">(영상 링크)</a> 이를 본 네퓨즈 부우장 박인성은손으로 하는 게임이 아닌 입으로 하는게 좀 재미있지 않을까 라는 생각을 하게됩니다. 이를 계기로 2주간 제작에 몰두하게 됩니다.
         
 <h2>What did you do?</h2>        
 그럼 openCV 짧게나마 소개를 해야겠죠? openCV는 <i><b>"Open Computer Vision의 약자로 인텔에서 실시간 이미지 프로세싱을 중점으로 둔라이브러리이다."</b></i> 라고 합니다. 이 프로젝트에서 openCV가 쓰인 이유는사람의 입을 찾기 위한 용도입니다. 사람의 입을 찾기 위해서는 openCV에서 쓰이는알고리즘이 있는데요, 바로 <a href="https://ibug.doc.ic.ac.ukresources/facial-point-annotations/">Facial landmark</a> 와 <ahref="#">Haar Cascade</a> 입니다. 아래 그림을 통해 좀 더 자세한 설명을하겠습니다.<img src="./img/CROP_Face.png"> 가장 먼저 쓰이는 알고리즘은 <i>Haar Cascade</i> 알고리즘입니다. 간단한설명을 하자면 Positive Image (사람 얼굴의 사진)와 Negative Image(사람의 얼굴이 아닌 사진)을 다단계 함수를 통해서 훈련하는 기계 학습 방식의검출기입니다. Positive Image를 통해서 사람의 얼굴이라는 것을 학습을 시키고검출기가 좀 더 정확한 판단을 위해서 Negative Image 학습을 합니다. 비교를통해서 좀 정밀한 결과 값을 얻어내기 위함입니다. <strike style="font-size:x-small;">약간 비싼 음식 먹다가 싼 거 먹으면 확실히 맛없다는 거 느끼는 방식</strike> <br/>
